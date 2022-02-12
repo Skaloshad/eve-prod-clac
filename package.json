@@ -9,7 +9,13 @@
     "electron:build": "vue-cli-service electron:build",
     "electron:serve": "vue-cli-service electron:serve",
     "postinstall": "electron-builder install-app-deps",
-    "postuninstall": "electron-builder install-app-deps"
+    "postuninstall": "electron-builder install-app-deps",
+    "release": "electron-builder"
+  },
+  "build": {
+    "publish": [
+      "github"
+    ]
   },
   "main": "background.js",
   "dependencies": {
@@ -17,6 +23,7 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
+    "@electron-forge/publisher-github": "^6.0.0-beta.63",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
