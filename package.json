@@ -2,6 +2,11 @@
   "name": "eve-prod-calc",
   "version": "0.1.0",
   "private": true,
+  "description": "Calculating production in eve online",
+  "author": {
+    "email": "dalex90mail@gmail.com",
+    "name": "Alex"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -9,13 +14,7 @@
     "electron:build": "vue-cli-service electron:build",
     "electron:serve": "vue-cli-service electron:serve",
     "postinstall": "electron-builder install-app-deps",
-    "postuninstall": "electron-builder install-app-deps",
-    "release": "electron-builder"
-  },
-  "build": {
-    "publish": [
-      "github"
-    ]
+    "postuninstall": "electron-builder install-app-deps"
   },
   "main": "background.js",
   "dependencies": {
