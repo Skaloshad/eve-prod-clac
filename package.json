@@ -7,6 +7,21 @@
     "email": "dalex90mail@gmail.com",
     "name": "Alex"
   },
+  "config": {
+    "forge": {
+      "publishers": [
+        {
+          "name": "@electron-forge/publisher-github",
+          "config": {
+            "repository": {
+              "owner": "Skaloshad",
+              "name": "eve-prod-calc"
+            }
+          }
+        }
+      ]
+    }
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
